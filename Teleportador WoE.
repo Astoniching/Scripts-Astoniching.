@@ -1,0 +1,64 @@
+//====================================================================================================================================//
+
+//Script feito por Astoniching
+
+//====================================================================================================================================//
+
+// Um script bem simples,que qualquer pessoa pode fazer,lembrando que é para pessoas que não tem conhecimento nenhum no assunto.
+
+//=====================================================================================================================================//
+
+// Script iniciado no dia 30/01/2013
+
+//====================================================================================================================================//
+prontera,164,165,3	script	Teleportador WoE	97,{
+
+mes "[ Teleportador WoE]";
+mes "Olá,bom dia.";
+mes "Eu sou o responsável por levar as pessoas para guerra de emperium,conhecida como WoE,gostaria de ir para qual castelo?";
+switch(select("- Kriemhild","- Skoegul","- Gondul","- Fadhgridh","- Swanhild","- Cancelar")) {
+
+	case 1:
+		mes "[ Teleportador WoE]";
+		mes "Okay,vamos até lá!";
+		close2;
+		warp "prt_gld",139,63; // Kriemhild
+		break;
+
+		case 2:
+			mes "[ Teleportador WoE]";
+			mes "Okay,vamos até lá!";
+			close2;
+			warp "prt_gld",110,239; // Skoegul
+			break;
+
+			case 3:
+				mes "[ Teleportador WoE]";
+				mes "Okay,vamos até lá!";
+				close2;
+				warp "prt_gld",208,240; // Gondul
+				break;
+
+				case 4:
+					mes "[ Teleportador WoE]";
+					mes "Okay,vamos até lá!";
+					close2;
+					warp "prt_gld",155,134; // Fadhgridh
+					break;
+					
+					case 5:
+						mes "[ Teleportador WoE]";
+						mes "Okay,vamos até lá!";
+						close2;
+						warp "prt_gld",241,133; // Swanhild
+						break;
+					
+						case 6:
+							next;
+							mes "[ Teleportador WoE]";
+							mes "Até mais!";
+							close;
+					
+					
+}
+}
